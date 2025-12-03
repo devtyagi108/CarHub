@@ -74,7 +74,7 @@ const BuyerDashboard = () => {
               <Link to={`/cars/${offer.carId._id}`} className="offer-car-link">
                 <div className="offer-car-image">
                   {offer.carId.images && offer.carId.images.length > 0 ? (
-                    <img src={`http://localhost:5001${offer.carId.images[0]}`} alt={offer.carId.title} />
+                    <img src={`https://carhub-1fwz.onrender.com${offer.carId.images[0]}`} alt={offer.carId.title} />
                   ) : (
                     <div className="no-image">No Image</div>
                   )}

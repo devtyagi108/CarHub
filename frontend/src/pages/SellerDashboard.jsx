@@ -307,7 +307,7 @@ const SellerDashboard = () => {
                 >
                   <div className="my-car-image">
                     {car.images && car.images.length > 0 ? (
-                      <img src={`http://localhost:5001${car.images[0]}`} alt={car.title} />
+                      <img src={`https://carhub-1fwz.onrender.com${car.images[0]}`} alt={car.title} />
                     ) : (
                       <div className="no-image">No Image</div>
                     )}
