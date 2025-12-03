@@ -1,0 +1,87 @@
+.car-card {
+  display: block;
+  background-color: var(--bg-secondary);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.car-card:hover {
+  border-color: var(--accent-primary);
+  box-shadow: 0 8px 24px rgba(0, 212, 255, 0.2);
+}
+
+.car-card-image {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  background-color: var(--bg-tertiary);
+  position: relative;
+}
+
+.car-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.car-card:hover .car-card-image img {
+  transform: scale(1.1);
+}
+
+.car-card-overlay {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.car-status {
+  background-color: var(--accent-success);
+  color: var(--bg-primary);
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.car-card-content {
+  padding: 1.5rem;
+}
+
+.car-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.car-card-brand {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.car-card-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.car-card-year {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  background-color: var(--bg-tertiary);
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+}
+
+.car-card-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent-success);
+}
+
