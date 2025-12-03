@@ -77,7 +77,7 @@ const CarDetailsPage = () => {
   }
 
   const images = car.images && car.images.length > 0 
-    ? car.images.map(img => `http://localhost:5001${img}`)
+    ? car.images.map(img => `https://carhub-1fwz.onrender.com${img}`)
     : ['/placeholder-car.jpg'];
 
   return (
