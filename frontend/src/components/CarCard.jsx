@@ -4,7 +4,7 @@ import './CarCard.css';
 
 const CarCard = ({ car, index }) => {
   const imageUrl = car.images && car.images.length > 0 
-    ? `http://localhost:5001${car.images[0]}` 
+    ? `https://carhub-1fwz.onrender.com${car.images[0]}` 
     : '/placeholder-car.jpg';
 
   return (
